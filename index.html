@@ -4,59 +4,133 @@
 <head>
   <meta charset="utf-8">
   <title>TradeSocial</title>
+  <!-- JQuery code to make navbar work -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,900|Ubuntu:300,400&display=swap" rel="stylesheet">
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/4f96d3b1cc.js"></script>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
   <section id="title">
+    <div class="container-fluid">
 
-    <!-- Nav Bar -->
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+
+        <a class="navbar-brand" href="">TradeSocial</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Download</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
 
 
 
 
-    <!-- Title -->
 
-    <div>
-      <h1>Revolutionary Social Trading.</h1>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
-    </div>
-    <div>
-      <img src="images/iphone.png" alt="iphone-mockup"width="500" height="500">
-    </div>
+          <h1 class="big-heading">Revolutionary Social Trading.</h1>
+          <button type="button" class="download-btn btn btn-dark btn-lg"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="download-btn btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/iphone.png" alt="iphone-mockup"width="500" height="500">
+        </div>
 
+      </div>
   </section>
+
+
 
 
   <!-- Features -->
 
   <section id="features">
+    <div class="row">
 
-    <h3>Easy to use.</h3>
-    <p>No trading experience needed at all.</p>
 
-    <h3>Elite Traders</h3>
-    <p>Many well known traders use our platfrom and you can copy them.</p>
+      <div class="col-lg-4 a-feature">
+        <i class="far fa-check-circle feature-icon"></i>
+        <h3 class="feature-heading">Easy to use.</h3>
+        <p class="feature-text">No trading experience needed at all.</p>
+      </div>
 
-    <h3>Guaranteed to work.</h3>
-    <p>It's super easy and you don't have to do anything.</p>
+      <div class="col-lg-4 a-feature">
+        <i class="fas fa-bullseye feature-icon"></i>
+        <h3 class="feature-heading">Elite Clientele</h3>
+        <p class="feature-text">Many well known traders use our platfrom and you can copy them.</p>
+      </div>
+
+      <div class="col-lg-4 a-feature">
+        <i class="fas fa-heart feature-icon"></i>
+        <h3 class="feature-heading">Guaranteed to work.</h3>
+        <p class="feature-text">It's super easy and you don't have to do anything.</p>
+      </div>
+
+
+
+    </div>
 
   </section>
 
-
   <!-- Testimonials -->
-
   <section id="testimonials">
 
-    <h2>I love using this platfrom. I make money while I sleep</h2>
-    <img src="images/dog-img.jpg" alt="dog-profile">
-    <em>Pebbles, New York</em>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
-    <h2 class="testimonial-text">This is making me rich!</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+          <h2>I love using this platfrom. I make money while I sleep</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">This is making me rich!</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
 
   </section>
 
@@ -64,45 +138,73 @@
   <!-- Press -->
 
   <section id="press">
-    <img src="images/techcrunch.png" alt="tc-logo">
-    <img src="images/tnw.png" alt="tnw-logo">
-    <img src="images/bizinsider.png" alt="biz-insider-logo">
-    <img src="images/mashable.png" alt="mashable-logo">
+    <img class='press-logo' src="images/techcrunch.png" alt="tc-logo">
+    <img class='press-logo' src="images/tnw.png" alt="tnw-logo">
+    <img class='press-logo' src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class='press-logo' src="images/mashable.png" alt="mashable-logo">
 
   </section>
 
 
   <!-- Pricing -->
-
   <section id="pricing">
 
     <h2>A Plan for Every Trader's Needs</h2>
     <p>Simple and affordable price plans for your and your wallet.</p>
+    <div class="row pricing-selector">
+      <div class="col-lg-4 col-md-6">
 
 
-    <h3>Starter</h3>
-    <h2>Free</h2>
+        <div class="card price-card">
+          <div class="card-header">
+
+            <h3>Starter</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
     <p>5 Trades Per Day</p>
     <p>Copy 100 Traders</p>
     <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+            <button type="button" class="btn btn-outline-dark btn-lg price-button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card price-card">
+          <div class="card-header">
+            <h3>Amatuer</h3>
 
-
-    <h3>Amatuer</h3>
-    <h2>$49 / mo</h2>
+          </div>
+          <div class="card-body">
+            <h2>$49 / mo</h2>
     <p>Unlimited Trades</p>
     <p>Unlimited Copy</p>
     <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+            <button type="button" class="btn btn-dark btn-lg price-button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card price-card">
+          <div class="card-header">
+            <h3>Pro</h3>
+
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Pirority Buying</p>
+            <p>Unlimited Trades</p>
+            <p>Unlimited Copy</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-dark btn-lg price-button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 
-    <h3>Pro</h3>
-    <h2>$99 / mo</h2>
-    <p>Pirority Buying</p>
-    <p>Unlimited Trades</p>
-    <p>Unlimited Copy</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+
 
   </section>
 
@@ -111,20 +213,25 @@
 
   <section id="cta">
 
-    <h3>Trade like a Pro.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <h3 class="cta-text">Trade like a Pro.</h3>
+    <button type="button" class="download-btn btn btn-dark btn-lg"><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="download-btn btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
 
   </section>
 
 
   <!-- Footer -->
-
   <footer id="footer">
+    <i class="fab footer-icon fa-twitter"></i>
+    <i class="fab footer-icon fa-facebook-f"></i>
+    <i class="fab footer-icon fa-instagram"></i>
+    <i class="fas footer-icon fa-envelope"></i>
 
     <p>© Copyright 2020 TradeSocial</p>
 
   </footer>
+
+
 
 
 </body>
